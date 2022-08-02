@@ -1,0 +1,16 @@
+// checkout sample-go-project at the location $GOPATH/src
+
+
+// run the program
+cd sample-go-project/cmd
+go run caller.go
+
+// build the program
+cd sample-go-project/cmd
+go build  // this would build cmd.exe inside cmd/ directory
+
+// build and install the binary at $GOPATH/bin
+cd sample-go-project/cmd
+go install
+cd $GOPATH/bin
+cmd.exe // executable
